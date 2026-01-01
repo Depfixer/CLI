@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://docs.depfixer.com
+    about: Check out our documentation for guides and tutorials
+  - name: Discussions
+    url: https://github.com/depfixer/cli/discussions
+    about: Ask questions and share ideas with the community
