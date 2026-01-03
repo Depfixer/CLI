@@ -2,8 +2,6 @@
 
 Smart dependency conflict detection for JavaScript/TypeScript projects.
 
-[![npm version](https://img.shields.io/npm/v/depfixer.svg)](https://www.npmjs.com/package/depfixer)
-[![npm downloads](https://img.shields.io/npm/dm/depfixer.svg)](https://www.npmjs.com/package/depfixer)
 [![Node.js](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)](https://nodejs.org/)
 
 ## Installation
@@ -66,9 +64,9 @@ Full documentation available at **[docs.depfixer.com](https://docs.depfixer.com)
 
 ## Support
 
-- [Report a Bug](https://github.com/depfixer/cli/issues/new?template=bug_report.md)
-- [Request a Feature](https://github.com/depfixer/cli/issues/new?template=feature_request.md)
-- [Discussions](https://github.com/depfixer/cli/discussions)
+- [Report a Bug](https://github.com/depfixer/CLI/issues/new?template=bug_report.md)
+- [Request a Feature](https://github.com/depfixer/CLI/issues/new?template=feature_request.md)
+- [Discussions](https://github.com/depfixer/CLI/discussions)
 
 ## Links
 
