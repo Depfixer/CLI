@@ -53,6 +53,29 @@ npx depfixer fix
 - **React** 16 - 19
 - **Vue** 2 - 3
 
+## Privacy & Architecture
+
+DepFixer is a **cloud-powered analysis engine**. The CLI acts as a local client that:
+1. Scans your `package.json` locally.
+2. Sends an anonymized dependency graph to our secure API.
+3. Receives the deterministic resolution and displays it.
+
+**We never upload your source code.** Only the dependency tree (names and versions) is analyzed.
+
+### Telemetry
+
+The CLI collects anonymous usage data (e.g., OS version, Node version, command duration) to help us improve performance.
+
+**Opt-out:**
+
+You can disable telemetry completely by setting an environment variable:
+
+```bash
+export DEPFIXER_DISABLE_ANALYTICS=true
+```
+
+> **Note:** This disables usage tracking events. Functional API calls (audits, auth) are still required for the tool to operate.
+
 ## Documentation
 
 Full documentation available at **[docs.depfixer.com](https://docs.depfixer.com)**
@@ -79,9 +102,36 @@ Full documentation available at **[docs.depfixer.com](https://docs.depfixer.com)
 - Node.js 18.0.0 or higher
 - npm 8.0.0 or higher
 
+## Development
+
+```bash
+# Clone the repository
+git clone https://github.com/nicob88/depfixer-cli.git
+cd depfixer-cli
+
+# Install dependencies
+npm install
+
+# Build
+npm run build
+
+# Run locally
+npm run dev
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
 ## License
 
-Apache-2.0
+Apache-2.0 - see [LICENSE](LICENSE) for details.
 
 ---
 

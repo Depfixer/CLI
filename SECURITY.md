@@ -6,7 +6,7 @@ If you discover a security vulnerability in DepFixer CLI, please report it respo
 
 ### How to Report
 
-**Email**: security@depfixer.com
+**Email**: contact@depfixer.com
 
 Please include:
 - Description of the vulnerability

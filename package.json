@@ -1,0 +1,68 @@
+{
+  "name": "depfixer",
+  "version": "1.1.9",
+  "description": "CLI tool for analyzing and fixing JavaScript/TypeScript dependency conflicts",
+  "main": "dist/index.js",
+  "bin": {
+    "depfixer": "dist/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run build",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:unit": "node --experimental-vm-modules node_modules/jest/bin/jest.js test/unit",
+    "test:integration": "node --experimental-vm-modules node_modules/jest/bin/jest.js test/integration",
+    "test:e2e": "node --experimental-vm-modules node_modules/jest/bin/jest.js test/e2e",
+    "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch"
+  },
+  "keywords": [
+    "dependencies",
+    "dependency-management",
+    "package-json",
+    "version-conflicts",
+    "angular",
+    "react",
+    "vue",
+    "npm"
+  ],
+  "author": "DepFixer Team",
+  "license": "Apache-2.0",
+  "homepage": "https://depfixer.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicob88/depfixer-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nicob88/depfixer-cli/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.4",
+    "boxen": "^8.0.1",
+    "chalk": "^5.3.0",
+    "cli-table3": "^0.6.5",
+    "commander": "^12.1.0",
+    "open": "^10.1.0",
+    "ora": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.10.0",
+    "jest": "^29.7.0",
+    "rimraf": "^5.0.5",
+    "ts-jest": "^29.1.2",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
+}
