@@ -1,0 +1,23 @@
+# Source files
+src/
+tsconfig.json
+.gitignore
+
+# Tests
+test/
+*.test.ts
+*.spec.ts
+jest.config.js
+
+# Development
+.github/
+.vscode/
+.idea/
+
+# Build artifacts
+*.log
+*.tsbuildinfo
+
+# Documentation
+CHANGELOG.md
+CONTRIBUTING.md
